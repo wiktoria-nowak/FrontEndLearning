@@ -132,13 +132,9 @@ const changeStyleToDark = () => {
     root.style.setProperty('--border-color', 'rgba(255,255,255,.4)')
 }
 
-
-
 addTransactionBtn.addEventListener("click", showPanel);
 cancelBtn.addEventListener("click", closePanel);
 saveBtn.addEventListener("click",checkForm)
 deleteAllBtn.addEventListener("click",deleteAllTransactions);
 lightStyleBtn.addEventListener("click",changeStyleToLight);
 darkStyleBtn.addEventListener("click",changeStyleToDark);
-
-
