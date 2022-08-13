@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasionko - sklep ogrodniczy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <section id="start" class="start">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
+      <p class="display-1 fw-bold">Nasionko</p>
+      <p class="welcome-text mb-5">Sadzimy, dbamy<br>i kochamy.</p>
+      <div class="hero-shadow"></div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg bg-light py-4" id="navbar">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav text-center mx-auto">
+          <a class="nav-link active" href="#start">Home</a>
+          <a class="nav-link" href="#aboutus">O firmie</a>
+          <a class="nav-link" href="#prices">Cennik</a>
+          <a class="nav-link" href="#contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="aboutus">
+      <div class="container mt-5 mb-5">
+        <p class="display-5 section-title text-center text-md-start">O firmie</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 aboutus-img p-5"></div>
+
+          <div class="col-sm-12 col-md-8 px-4 aboutus-desc">
+            <p class="aboutus-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti consequuntur, aliquid nostrum odio sit omnis autem
+              eligendi beatae accusamus ipsum error adipisci delectus sapiente
+              minus facere minima amet? Totam, corrupti.
+            </p>
+            <div class="row d-flex">
+              <div class="col-6">
+                <p class="small-desc pt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, harum fuga.
+                </p>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <button class="btn btn-outline-dark px-5">Kontakt</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="more mb-5">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner text-light text-center">
+          <div class="carousel-item carousel-img-one active">
+            <div class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+              <p class="display-4">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="hero-shadow"></div>
+          </div>
+
+          <div class="carousel-item carousel-img-two">
+            <div class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+              <p class="display-4">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="hero-shadow"></div>
+          </div>
+
+          <div class="carousel-item carousel-img-three">
+            <div class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+              <p class="display-4">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="hero-shadow"></div>
+          </div>
+
+          <div class="carousel-item carousel-img-four">
+            <div class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+              <p class="display-4">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="hero-shadow"></div>
+          </div>
+
+          <div class="carousel-item carousel-img-five">
+            <div class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+              <p class="display-4">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="hero-shadow"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="prices" class="prices mb-2 p-5 text-center">
+      <div class="container">
+        <div class="row justify-content-evenly">
+
+          <div class="col-md-4 col-xl-3">
+            <div class="card mb-3 px-2">
+              <div class="card-body">
+                <p class="card-title mb-3">Projekt ogrodu</p>
+                <p class="card-text pb-3 border-bottom">Lorem ipsum dolor.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                <p class="card-icon"><i class="bi bi-pencil-square text-success"></i></p>
+                <button class="btn btn-outline-dark">kup</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xl-3">
+            <div class="card mb-3 px-2">
+              <div class="card-body">
+                <p class="card-title mb-3">Sprzedaż roślin</p>
+                <p class="card-text pb-3 border-bottom">Lorem ipsum dolor.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                <p class="card-icon"><i class="bi bi-flower1 text-success"></i></p>
+                <button class="btn btn-outline-dark">kup</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xl-3">
+            <div class="card mb-3 px-2">
+              <div class="card-body">
+                <p class="card-title mb-3">Środki ochrony</p>
+                <p class="card-text pb-3 border-bottom">Lorem ipsum dolor.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                <p class="card-icon"><i class="bi bi-shield-fill-plus text-success"></i></p>
+                <button class="btn btn-outline-dark">kup</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container py-5">
+        <p class="display-5 section-title text-uppercase  text-center text-md-start">Kontakt</p>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0 border py-5 d-flex flex-column justify-content-center">
+              <h2>Adres:</h2>
+              <p class="contact-name fw-bold text-success mb-4">Nasionko</p>
+              <p class="contact-text mb-4">
+                <i class="bi bi-geo-alt text-success"></i> ul. Słoneczna 16
+                <br />
+                13-313 Szczebrzeszyn
+              </p>
+              <p class="contact-text mb-4"><i class="bi bi-phone  text-success"></i> +48 333 888 333</p>
+              <p class="contact-text "><i class="bi bi-at  text-success"></i> nasionko@mail.com</p>
+            </div>
+
+            <div class="col-md-8 border formular">
+              <div class="p-2">
+                <form class="mt-1">
+                  <div class="row">
+                    <div class="form-group col-md-6  mb-3">
+                      <label class="form-label">Imię i nazwisko:</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-6 mb-3">
+                      <label for="email" class="form-label">Adres mailowy:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="topic" class="form-label">Temat wiadomości:</label>
+                      <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected disabled>- wybierz temat -</option>
+                        <option value="1">Projekt ogrodu</option>
+                        <option value="2">Sprzedaż roślin</option>
+                        <option value="3">Środki ochrony</option>
+                        <option value="4">Inny</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message" class="form-label">Treść wiadomości:</label>
+                      <textarea rows="6" class="form-control  mb-3"></textarea>
+                    </div>
+
+                  </div>
+                </form>
+                <div class="text-center">
+                  <button class="btn btn-outline-dark">wyślij</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-light border-top">
+    <p class="text-center mb-0 py-4">&copy; Nasionko</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+
+  <script>
+    const nav = document.querySelector(".navbar-collapse");
+
+    document.addEventListener("click", () => {
+      if (nav.classList.contains("show")) {
+        nav.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+
+</html>

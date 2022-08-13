@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 62.5%;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* start */
+
+.start {
+  position: relative;
+  height: 30rem;
+  background-image: url(./img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.welcome-text {
+  font-size: 2rem;
+}
+
+/* menu */
+
+.navbar-nav {
+  font-size: 2rem;
+}
+
+/* o nas */
+
+.aboutus h2 {
+  text-transform: uppercase;
+}
+
+.aboutus-img {
+  background-image: url(./img/about-us.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutus-text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* slider */
+
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.carousel-img-one {
+  background-image: url(./img/slider/slide-1.jpg);
+}
+
+.carousel-img-two {
+  background-image: url(./img/slider/slide-2.jpg);
+}
+
+.carousel-img-three {
+  background-image: url(./img/slider/slide-3.jpg);
+}
+
+.carousel-img-four {
+  background-image: url(./img/slider/slide-4.jpg);
+}
+
+.carousel-img-five {
+  background-image: url(./img/slider/slide-5.jpg);
+}
+
+/* prices */
+
+.prices {
+  background-color: #eee;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+.card-icon {
+  font-size: 1.3rem;
+}
+
+/* kontakt */
+
+.contact-name {
+  font-size: 1.6rem;
+}
+
+.contact-text {
+  font-size: 0.9rem;
+}
+
+.contact label,
+.contact input,
+.contact select {
+  font-size: 0.9rem;
+}
+
+.contact h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.formular {
+  text-align: left;
+}
+
+/* stopka */
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .aboutus-img {
+    height: 30vh;
+  }
+
+  .aboutus-desc {
+    margin: 50px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .aboutus-img {
+    background-position: 0 65%;
+  }
+}
