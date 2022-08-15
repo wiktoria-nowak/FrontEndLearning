@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--spring-color: #5bca5b;
+	--summer-color: #c2b32b;
+	--autumn-color: #e06329;
+	--winter-color: #9ccaf0;
+}
+
+[data-bg="spring"] {
+	background-color: var(--spring-color);
+}
+
+[data-bg="summer"] {
+	background-color: var(--summer-color);
+}
+
+[data-bg="autumn"] {
+	background-color: var(--autumn-color);
+}
+
+[data-bg="winter"] {
+	background-color: var(--winter-color);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	padding: 2em;
+	width: 1200px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+.card {
+	position: relative;
+	flex-grow: .8;
+	height: 600px;
+	margin: 4px;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+	transition: flex-grow .8s;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.card::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	transition: opacity .5s;
+}
+
+.spring {
+	background-image: url(./img/spring.jpg);
+}
+
+.summer {
+	background-image: url(./img/summer.jpg);
+}
+
+.autumn {
+	background-image: url(./img/autumn.jpg);
+}
+
+.winter {
+	background-image: url(./img/winter.jpg);
+}
+
+.spring::before,
+.summer::before,
+.autumn::before,
+.winter::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+.spring::before {
+	background-color: var(--spring-color);
+}
+
+.summer::before {
+	background-color: var(--summer-color);
+}
+
+.autumn::before {
+	background-color: var(--autumn-color);
+}
+
+.winter::before {
+	background-color: var(--winter-color);
+}
+
+.text {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	transform: translateX(-50%);
+	width: 80%;
+	padding: 2em;
+	color: #fff;
+	border-radius: 6px;
+	z-index: 5;
+}
+
+.text h2 {
+	text-transform: uppercase;
+	transform: rotate(-90deg);
+}
+
+.text p {
+	display: none;
+	opacity: 0;
+	font-size: 1.6rem;
+}
+
+.active {
+	flex-grow: 8;
+}
+
+.active .text {
+	animation: show-bg 1s .6s forwards;
+}
+
+.active .text h2 {
+	display: none;
+}
+
+.active .text p {
+	display: block;
+	animation: show-text 1s .2s forwards;
+}
+
+.card.active::after {
+	opacity: 0;
+}
+
+@keyframes show-bg {
+	to {
+		background-color: rgba(0, 0, 0, .4);
+	}
+}
+
+@keyframes show-text {
+	to {
+		opacity: 1;
+	}
+}
